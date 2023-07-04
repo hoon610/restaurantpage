@@ -1,8 +1,18 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
-  entry: './src/index.js',
+  mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  entry: {
+    main: './src/index.js',
+  },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, './dist'),
@@ -10,7 +20,5 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
+  
 };

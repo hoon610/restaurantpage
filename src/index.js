@@ -1,5 +1,8 @@
 import './style.css';
-import { loadHome } from './homeload';
+
+import { loadInitial } from './loadInitial';
+
+
 let content = document.getElementById('content');
-loadHome();
-console.log("hiki")
+loadInitial();
+console.log()
