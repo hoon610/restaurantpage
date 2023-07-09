@@ -1,5 +1,6 @@
 import { loadHome } from './loadInitial.js';
 import { loadContact } from './loadContact.js';
+import { addMenuItems } from './menuItems.js';
 
 export function loadMenu() {
     /* main */
@@ -45,20 +46,30 @@ export function loadMenu() {
     aboutUsTitle.classList.add('aboutUsTitle');
     aboutUsTitle.textContent = 'Menu';
 
-    const aboutUs1 = document.createElement('div');
-    aboutUs1.classList.add('aboutUs', 'aboutUs1');
-    aboutUs1.textContent = "We're here to end your boredom with the same old food choices.";
-    const aboutUs2 = document.createElement('div');
-    aboutUs2.classList.add('aboutUs', 'aboutUs2');
-    aboutUs2.textContent = "The Cupbop menu is our own delicious take on Korean cuisine. Exotically flavorful, naturally healthy dishes you've never had a chance to try— and we make them all affordable, fresh, and lightning fast.";
+    const menuTitleOne = document.createElement('div');
+    menuTitleOne.classList.add('menuTitleOne', 'menuTitle');
+    menuTitleOne.textContent = "Entrees";
+    const entrees = document.createElement('div');
+    entrees.classList.add('entrees', 'menuItemHolder');
 
 
+
+    const menuTitleTwo = document.createElement('div');
+    menuTitleTwo.classList.add('menuTitleTwo', 'menuTitle');
+    menuTitleTwo.textContent = "Sides";
+    const sides = document.createElement('div');
+    sides.classList.add('sides', 'menuItemHolder');
+
+    
 
 
     block.appendChild(aboutUsTitle);
-    block.appendChild(aboutUs1);
-    block.appendChild(aboutUs2);
+    block.appendChild(menuTitleOne);
+    block.appendChild(entrees);
+    block.appendChild(menuTitleTwo);
+    block.appendChild(sides);
     main.appendChild(block);
+    addMenuItems();
 
     /* footer */
     main.appendChild(footer);
