@@ -14,12 +14,12 @@ export const updateSidebarMenuEntree = (entreeId) => {
     title.textContent = entreeItems[entreeId].name;
     const foodDescription = document.createElement('div');
     foodDescription.textContent = entreeItems[entreeId].paragraph;
-    const welcomeImage = document.createElement('img');
-    welcomeImage.src = "./images/cat.jpeg"
+    const entreeImage = document.createElement('img');
+    entreeImage.src = entreeItems[entreeId].image;
 
     sidebar.appendChild(title);
     sidebar.appendChild(foodDescription);
-    sidebar.appendChild(welcomeImage);
+    sidebar.appendChild(entreeImage);
 
     content.appendChild(sidebar);
 }
@@ -39,12 +39,10 @@ export const updateSidebarMenuSide = (sideId) => {
     title.textContent = sideItems[sideId].name;
     const foodDescription = document.createElement('div');
     foodDescription.textContent = sideItems[sideId].paragraph;
-    const welcomeImage = document.createElement('img');
-    welcomeImage.src = "./images/cat.jpeg"
-
+    
     sidebar.appendChild(title);
     sidebar.appendChild(foodDescription);
-    sidebar.appendChild(welcomeImage);
+    
 
     content.appendChild(sidebar);
 }

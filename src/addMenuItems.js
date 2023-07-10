@@ -23,21 +23,23 @@ export const addMenuItems = () => {
         description.classList.add('description');
 
         description.textContent = entreeItems[i].description;
-
+        titleLine.appendChild(title);
         if(entreeItems[i].glutenfree == true){
-            let glutenIcon = document.createElement('div');
+            let glutenIcon = document.createElement('img');
             glutenIcon.classList.add('glutenIcon');
             titleLine.appendChild(glutenIcon);
+            glutenIcon.src = './images/glutenfree.png';
         }
-        titleLine.appendChild(title);
+        
 
         let entreeId = entreeItems[i].id;
         menuitem.addEventListener('click', function() {
           updateSidebarMenuEntree(entreeId);
           console.log('Clicked on entree with ID:', entreeId);
+
   });
 
-  menuitem.appendChild(description);
+        menuitem.appendChild(description);
         menuitem.appendChild(titleLine);
         entrees.appendChild(menuitem);
       };

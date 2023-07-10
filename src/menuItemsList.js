@@ -7,7 +7,8 @@ let entreeItems = [
         "glutenfree": false,
         "imagelink": 7,
         "id":0,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy tangy chicken tossed in our homemade sauce'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy tangy chicken tossed in our homemade sauce',
+        image: './images/Rock.webp'
     },
     {
         "name": "COMBO BOP",
@@ -16,7 +17,8 @@ let entreeItems = [
         "glutenfree": false,
         "imagelink": 7,
         "id":1,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and your choice of any two proteins'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and your choice of any two proteins',
+        image: './images/Combo.webp'
     },
     {
         "name": "B BOP",
@@ -25,7 +27,8 @@ let entreeItems = [
         "glutenfree": false,
         "imagelink": 7,
         "id":2,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our specialty marinaded bulgogi beef'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our specialty marinaded bulgogi beef',
+        image: './images/B.webp'
     },
     {
         "name": "PIGGY BOP",
@@ -34,7 +37,8 @@ let entreeItems = [
         "glutenfree": false,
         "imagelink": 7,
         "id":3,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and spicy pork bulgogi'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and spicy pork bulgogi',
+        image: './images/Hot.webp'
     },
     {
         "name": "KKO KKO BOP",
@@ -43,7 +47,8 @@ let entreeItems = [
         "glutenfree": true,
         "imagelink": 7,
         "id":4,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our soy sauce based braised chicken'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our soy sauce based braised chicken',
+        image: './images/Kko.webp'
     },
     {
         "name": "DOOCHI BOP",
@@ -52,7 +57,8 @@ let entreeItems = [
         "glutenfree": true,
         "imagelink": 7,
         "id":5,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy tofu tossed in our homemade sauce'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy tofu tossed in our homemade sauce',
+        image: './images/Doochi.webp'
     },
     {
         "name": "VEGGIE BOP",
@@ -61,7 +67,8 @@ let entreeItems = [
         "glutenfree": true,
         "imagelink": 7,
         "id":6,
-        "paragraph": 'A bowl with rice, extra veggies, and sweet potato noodles'
+        "paragraph": 'A bowl with rice, extra veggies, and sweet potato noodles',
+        image: './images/Veggie.webp'
     },
     {
         "name": "NOODLE BOP",
@@ -70,7 +77,8 @@ let entreeItems = [
         "glutenfree": true,
         "imagelink": 7,
         "id":7,
-        "paragraph": 'A bowl with rice, veggies, and extra sweet potato noodles'
+        "paragraph": 'A bowl with rice, veggies, and extra sweet potato noodles',
+        image: './images/Noodle.webp'
     },
     {
         "name": "UGLY BOP",
@@ -79,7 +87,8 @@ let entreeItems = [
         "glutenfree": true,
         "imagelink": 7,
         "id":8,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy chicken'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy chicken',
+        image: './images/Ugly.webp'
     },
     {
         "name": "MANDOO BOP",
@@ -88,7 +97,8 @@ let entreeItems = [
         "glutenfree": false,
         "imagelink": 7,
         "id":9,
-        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our crispy deep-fried potstickers'
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our crispy deep-fried potstickers',
+        image: './images/Veggie.webp'
     }
 ]
 
