@@ -1,6 +1,8 @@
 import { loadHome } from './loadInitial.js';
 import { loadContact } from './loadContact.js';
-import { addMenuItems } from './menuItems.js';
+import { addMenuItems } from './addMenuItems.js';
+
+
 
 export function loadMenu() {
     /* main */
