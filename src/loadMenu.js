@@ -69,9 +69,14 @@ export function loadMenu() {
     block.appendChild(menuTitleTwo);
     block.appendChild(sides);
     main.appendChild(block);
-    addMenuItems();
+    
 
     /* footer */
     main.appendChild(footer);
+
+
+    /* main */
     mainWrapper.appendChild(main);  
+    addMenuItems();
+    
   }
