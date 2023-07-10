@@ -16,20 +16,20 @@ export const loadHome = () => {
     header.classList.add('header');
     const block = document.createElement('div');
     block.classList.add('block');
-    const footer = document.createElement('div');
-    footer.classList.add('footer');
     
         /* header */
         let dog = "3"
-        const home = document.createElement('div');
+        const home = document.createElement('img');
         home.classList.add('home');
-        home.textContent = "HOME";
+        home.src = './images/Logo.svg';
         const menu = document.createElement('div');
         menu.textContent = "MENU";
+        menu.classList.add('menuButton');
         menu.addEventListener("click", loadMenu);
         const contactUs = document.createElement('div');
         contactUs.textContent = "CONTACT US";
         contactUs.addEventListener("click", loadContact);
+        contactUs.classList.add('contactUsButton')
 
         header.appendChild(home);
         header.appendChild(menu);
@@ -47,19 +47,48 @@ export const loadHome = () => {
     const aboutUs1 = document.createElement('div');
     aboutUs1.classList.add('aboutUs', 'aboutUs1');
     aboutUs1.textContent = "We're here to end your boredom with the same old food choices.";
+    
+    const mainPageImage = document.createElement('img');
+    mainPageImage.classList.add('mainPageImage');
+    mainPageImage.src = "./images/Cupbop.jpg"
+
+    
     const aboutUs2 = document.createElement('div');
     aboutUs2.classList.add('aboutUs', 'aboutUs2');
-    aboutUs2.textContent = "The Cupbop menu is our own delicious take on Korean cuisine. Exotically flavorful, naturally healthy dishes you've never had a chance to try— and we make them all affordable, fresh, and lightning fast.";
+    aboutUs2.textContent = "The Cupbop menu is our own delicious take on Korean comfort food! Exotically flavorful, naturally healthy dishes you've never had a chance to try— and we make them all affordable, fresh, and lightning fast.";
 
 
 
 
     block.appendChild(aboutUsTitle);
     block.appendChild(aboutUs1);
+    
     block.appendChild(aboutUs2);
+    block.appendChild(mainPageImage);
     main.appendChild(block);
 
     /* footer */
+    const footer = document.createElement('div');
+footer.classList.add('footer');
+
+const footertext = document.createElement('p');
+footertext.classList.add('footertext');
+footertext.textContent = 'Copyright © 2023 Hoon Kang, Images courtesy of CupBop';
+
+const footerlink = document.createElement('a');
+
+footerlink.href = 'https://github.com/hoon610';
+footerlink.classList.add('githublink')
+footerlink.target = '_blank';
+
+const githubLogo = document.createElement('img');
+githubLogo.classList.add('githublogo')
+githubLogo.src = './images/githublogo.png';
+githubLogo.alt = 'GitHub Logo';
+
+footerlink.appendChild(githubLogo);
+footer.appendChild(footerlink);
+footer.appendChild(footertext);
     main.appendChild(footer);
     mainWrapper.appendChild(main); 
 }
@@ -80,10 +109,13 @@ export const loadInitial = () => {
     
     const welcome = document.createElement('div');
     welcome.textContent = 'Welcome';
+    welcome.classList.add("sidebarTitle")
     const welcomeText = document.createElement('div');
-    welcomeText.textContent = 'We are proud to bring Lowell the best of Korean cuisine';
+    welcomeText.classList.add("sidebarContent")
+    welcomeText.textContent = 'We are proud to bring Lowell the best of Korean cuisine! Mark your calendars because our new location in downtown Lowell opens in just six months!';
     const welcomeImage = document.createElement('img');
-    welcomeImage.src = "./images/cat.jpeg"
+    welcomeImage.classList.add("sidebarImage")
+    welcomeImage.src = "./images/homeSidebar.png"
 
     sidebar.appendChild(welcome);
     sidebar.appendChild(welcomeText);

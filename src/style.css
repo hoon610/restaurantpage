@@ -1,34 +1,42 @@
 *{
-    background-color: aqua;
+    
+    font-family: 'Roboto', sans-serif;
 }
+body {
+    margin: 0;
+    padding: 0;
+  }
 #content{
     width: 100%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: rgb(158, 152, 72);
     font-size: larger;
     display: flex;
 
 }
-.fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    background: lime; /* Just to visualize the extent */
-    
-  }
+.home{
+    width: 30%;
+    height: auto;
+}
+
 .sidebar{
     width: 30%;
     margin-left: auto;
+    background-color: rgba(249,203,19,255);
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+    
 }
 .main{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-right: auto;
-    background-color: aliceblue;
+    background-color: beige;
+    gap: 30px
 }
 .mainWrapper{
     
@@ -37,7 +45,7 @@
 .header{
     height: 120px;
     width: 100%;
-    background-color: aquamarine;
+    background-color:  rgb(158, 152, 72);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -54,5 +62,80 @@
 .footer{
     height: 60px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(122, 118, 61);
+    position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
+
+.menuButton, .contactUsButton, .home{
+    cursor: pointer;
+}
+.aboutUsTitle{
+    text-align: center;
+    font-size: 54px;
+}
+.aboutUs{
+    font-size: 24px;
+    margin: 30px 20%;
+}
+
+.mainPageImage{
+    width: 100%;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 20%;
+    width: 60%
+}
+
+button {
+    background-color: white;
+    color: gray;
+    height: 40px;
+    width: 130px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border: solid;
+    border-color: #E5E7EB;
+    margin: 10px 0;
+    align-self: center;
+}
+
+.githublogo{
+    width: 30px;
+    height: auto;
+    margin: 0 8px;
+}
+.githublink{
+    margin: 0 7px;
+}
+.sides{
+    margin-bottom: 60px;
+}
+textarea {
+    height: 150px; 
+  }
+
+  .sidebarTitle{
+    text-align: center;
+    font-size: 33px;
+    margin-top: 30px;
+  }
+
+  .sidebarContent{
+    margin: 0 10%
+  }
+
+  .sidebarImage{
+    width: 80%;
+    height: auto;
+  }

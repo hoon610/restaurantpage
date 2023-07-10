@@ -18,14 +18,12 @@ export function loadMenu() {
     header.classList.add('header');
     const block = document.createElement('div');
     block.classList.add('block');
-    const footer = document.createElement('div');
-    footer.classList.add('footer');
     
         /* header */
         let dog = "3"
-        const home = document.createElement('div');
+        const home = document.createElement('img');
         home.classList.add('home');
-        home.textContent = "HOME";
+        home.src = './images/Logo.svg';
         home.addEventListener("click", loadHome);
         const menu = document.createElement('div');
         menu.textContent = "MENU";
@@ -33,6 +31,7 @@ export function loadMenu() {
         const contactUs = document.createElement('div');
         contactUs.textContent = "CONTACT US";
         contactUs.addEventListener("click", loadContact);
+        contactUs.classList.add('contactUsButton')
         
 
         header.appendChild(home);
@@ -74,6 +73,28 @@ export function loadMenu() {
     
 
     /* footer */
+    const footer = document.createElement('div');
+footer.classList.add('footer');
+
+const footertext = document.createElement('p');
+footertext.classList.add('footertext');
+footertext.textContent = 'Copyright © 2023 Hoon Kang, Images courtesy of CupBop';
+
+const footerlink = document.createElement('a');
+
+footerlink.href = 'https://github.com/hoon610';
+footerlink.classList.add('githublink')
+footerlink.target = '_blank';
+
+const githubLogo = document.createElement('img');
+githubLogo.classList.add('githublogo')
+githubLogo.src = './images/githublogo.png';
+githubLogo.alt = 'GitHub Logo';
+
+footerlink.appendChild(githubLogo);
+footer.appendChild(footerlink);
+footer.appendChild(footertext);
+
     main.appendChild(footer);
 
 
