@@ -57,6 +57,7 @@ body {
     height:auto;
     width: 100%;
     background-color: beige;
+    padding-bottom: 20px;
 }
 
 .footer{
@@ -139,3 +140,39 @@ textarea {
     width: 80%;
     height: auto;
   }
+
+  .itemBox{
+    height: 300px;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 25px;
+    
+
+  }
+  .entrees{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+  }
+  .glutenIcon{
+    width: 30px;
+    height: auto;
+  }
+
+  .titleLine{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .menuTitle{
+    font-size: 40px;
+    margin: 15px
+  }
+ .title{
+    font-size: 30px;
+ }

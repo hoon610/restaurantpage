@@ -12,7 +12,7 @@ let entreeItems = [
     },
     {
         "name": "COMBO BOP",
-        "description": "Your choice of two proteins / veggies",
+        "description": "Your choice of two proteins",
         "caloriecount": "567 - 841 cal",
         "glutenfree": false,
         "imagelink": 7,
@@ -129,7 +129,7 @@ let sideItems = [
         "id":2,
         "paragraph": 'Our specialty sweet potato noodles'
     },
-
+    
   ]
 
   export { entreeItems, sideItems };

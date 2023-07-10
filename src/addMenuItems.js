@@ -19,8 +19,13 @@ export const addMenuItems = () => {
 
         title.textContent = entreeItems[i].name;
 
+        let itemImage = document.createElement('img')
+        itemImage.src = entreeItems[i].image;
+
         let description = document.createElement('div');
         description.classList.add('description');
+
+        
 
         description.textContent = entreeItems[i].description;
         titleLine.appendChild(title);
@@ -38,9 +43,10 @@ export const addMenuItems = () => {
           console.log('Clicked on entree with ID:', entreeId);
 
   });
-
+  menuitem.appendChild(titleLine);
+  menuitem.appendChild(itemImage);
         menuitem.appendChild(description);
-        menuitem.appendChild(titleLine);
+        
         entrees.appendChild(menuitem);
       };
 

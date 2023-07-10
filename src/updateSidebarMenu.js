@@ -11,9 +11,11 @@ export const updateSidebarMenuEntree = (entreeId) => {
     sidebar.classList.add('sidebar');
     
     const title = document.createElement('div');
+    title.classList.add('sidebarTitle')
     title.textContent = entreeItems[entreeId].name;
     const foodDescription = document.createElement('div');
     foodDescription.textContent = entreeItems[entreeId].paragraph;
+    foodDescription.classList.add('sidebarContent')
     const entreeImage = document.createElement('img');
     entreeImage.src = entreeItems[entreeId].image;
 
