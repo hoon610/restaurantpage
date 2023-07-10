@@ -22,7 +22,7 @@ body {
 .sidebar{
     width: 30%;
     margin-left: auto;
-    background-color: rgba(249,203,19,255);
+    background-color: rgb(249,203,19);
     height: auto;
     align-items: center;
     display: flex;
