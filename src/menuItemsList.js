@@ -6,7 +6,8 @@ let entreeItems = [
         "caloriecount": "968 cal",
         "glutenfree": false,
         "imagelink": 7,
-        "id":0
+        "id":0,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy tangy chicken tossed in our homemade sauce'
     },
     {
         "name": "COMBO BOP",
@@ -14,7 +15,8 @@ let entreeItems = [
         "caloriecount": "567 - 841 cal",
         "glutenfree": false,
         "imagelink": 7,
-        "id":1
+        "id":1,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and your choice of any two proteins'
     },
     {
         "name": "B BOP",
@@ -22,7 +24,8 @@ let entreeItems = [
         "caloriecount": "694 cal",
         "glutenfree": false,
         "imagelink": 7,
-        "id":2
+        "id":2,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our specialty marinaded bulgogi beef'
     },
     {
         "name": "PIGGY BOP",
@@ -30,7 +33,8 @@ let entreeItems = [
         "caloriecount": "774 cal",
         "glutenfree": false,
         "imagelink": 7,
-        "id":3
+        "id":3,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and spicy pork bulgogi'
     },
     {
         "name": "KKO KKO BOP",
@@ -38,7 +42,8 @@ let entreeItems = [
         "caloriecount": "714 cal",
         "glutenfree": true,
         "imagelink": 7,
-        "id":4
+        "id":4,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our soy sauce based braised chicken'
     },
     {
         "name": "DOOCHI BOP",
@@ -46,7 +51,8 @@ let entreeItems = [
         "caloriecount": "531 cal",
         "glutenfree": true,
         "imagelink": 7,
-        "id":5
+        "id":5,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy tofu tossed in our homemade sauce'
     },
     {
         "name": "VEGGIE BOP",
@@ -54,7 +60,8 @@ let entreeItems = [
         "caloriecount": "452 cal",
         "glutenfree": true,
         "imagelink": 7,
-        "id":6
+        "id":6,
+        "paragraph": 'A bowl with rice, extra veggies, and sweet potato noodles'
     },
     {
         "name": "NOODLE BOP",
@@ -62,7 +69,8 @@ let entreeItems = [
         "caloriecount": "244 cal",
         "glutenfree": true,
         "imagelink": 7,
-        "id":7
+        "id":7,
+        "paragraph": 'A bowl with rice, veggies, and extra sweet potato noodles'
     },
     {
         "name": "UGLY BOP",
@@ -70,7 +78,8 @@ let entreeItems = [
         "caloriecount": "883 cal",
         "glutenfree": true,
         "imagelink": 7,
-        "id":8
+        "id":8,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and crispy chicken'
     },
     {
         "name": "MANDOO BOP",
@@ -78,7 +87,8 @@ let entreeItems = [
         "caloriecount": "603 cal",
         "glutenfree": false,
         "imagelink": 7,
-        "id":9
+        "id":9,
+        "paragraph": 'A bowl with rice, veggies, sweet potato noodles, and our crispy deep-fried potstickers'
     }
 ]
 
@@ -89,14 +99,16 @@ let sideItems = [
         "description": "Deep-fried potstickers, 3pc",
         "glutenfree": false,
         "imagelink": 7,
-        "id":0
+        "id":0,
+        "paragraph": 'Our crispy deep-fried potstickers'
     },
     {
         "name": "KIMCHI",
         "description": "Korean spicy cabbage, 4oz",
         "glutenfree": false,
         "imagelink": 7,
-        "id":1
+        "id":1,
+        "paragraph": 'Spicy, pickled napa cabbage'
     }
     ,
     {
@@ -104,7 +116,8 @@ let sideItems = [
         "description": "Gluten free noodle substitution",
         "glutenfree": false,
         "imagelink": 7,
-        "id":2
+        "id":2,
+        "paragraph": 'Our specialty sweet potato noodles'
     },
 
   ]

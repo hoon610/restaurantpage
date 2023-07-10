@@ -12,13 +12,13 @@ export const updateSidebarMenuEntree = (entreeId) => {
     
     const title = document.createElement('div');
     title.textContent = entreeItems[entreeId].name;
-    const welcomeText = document.createElement('div');
-    welcomeText.textContent = 'We are proud to bring Lowell the best of Korean cuisine';
+    const foodDescription = document.createElement('div');
+    foodDescription.textContent = entreeItems[entreeId].paragraph;
     const welcomeImage = document.createElement('img');
     welcomeImage.src = "./images/cat.jpeg"
 
     sidebar.appendChild(title);
-    sidebar.appendChild(welcomeText);
+    sidebar.appendChild(foodDescription);
     sidebar.appendChild(welcomeImage);
 
     content.appendChild(sidebar);
@@ -37,13 +37,13 @@ export const updateSidebarMenuSide = (sideId) => {
     
     const title = document.createElement('div');
     title.textContent = sideItems[sideId].name;
-    const welcomeText = document.createElement('div');
-    welcomeText.textContent = 'We are proud to bring Lowell the best of Korean cuisine';
+    const foodDescription = document.createElement('div');
+    foodDescription.textContent = sideItems[sideId].paragraph;
     const welcomeImage = document.createElement('img');
     welcomeImage.src = "./images/cat.jpeg"
 
     sidebar.appendChild(title);
-    sidebar.appendChild(welcomeText);
+    sidebar.appendChild(foodDescription);
     sidebar.appendChild(welcomeImage);
 
     content.appendChild(sidebar);

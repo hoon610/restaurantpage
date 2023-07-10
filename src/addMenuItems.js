@@ -19,6 +19,11 @@ export const addMenuItems = () => {
 
         title.textContent = entreeItems[i].name;
 
+        let description = document.createElement('div');
+        description.classList.add('description');
+
+        description.textContent = entreeItems[i].description;
+
         if(entreeItems[i].glutenfree == true){
             let glutenIcon = document.createElement('div');
             glutenIcon.classList.add('glutenIcon');
@@ -32,7 +37,7 @@ export const addMenuItems = () => {
           console.log('Clicked on entree with ID:', entreeId);
   });
 
-
+  menuitem.appendChild(description);
         menuitem.appendChild(titleLine);
         entrees.appendChild(menuitem);
       };
